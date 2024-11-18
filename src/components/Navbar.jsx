@@ -3,9 +3,11 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex flex-row gap-4">
-      <NavLink to={"/"} className='mr-3'>Home</NavLink>
-      <NavLink to={"/pastes"}>Pastes</NavLink>
+    <div className="w-full h-[45px] flex justify-center items-center p-4 bg-gray-800 gap-x-5">
+      <NavLink to={"/"} className="mr-3 text-white">
+        Home
+      </NavLink>
+      <NavLink to={"/pastes"} className='text-white'>Pastes</NavLink>
     </div>
   );
 };
